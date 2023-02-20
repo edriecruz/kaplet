@@ -4,12 +4,12 @@ import { getFirestore } from "firebase/firestore"
 
 // Your web app's Firebase configuration
 const firebaseConfig = {
-  apiKey: "AIzaSyAF68G6i6RzAG8QWeWKwENbv-EtUfldUYE",
-  authDomain: "kaplet-f82b1.firebaseapp.com",
-  projectId: "kaplet-f82b1",
-  storageBucket: "kaplet-f82b1.appspot.com",
-  messagingSenderId: "1097599879279",
-  appId: "1:1097599879279:web:46314b125598e83267a59a"
+  apiKey: process.env.REACT_APP_FIREBASE_KEY,
+  authDomain: process.env.REACT_APP_AUTH_DOMAIN,
+  projectId: process.env.REACT_APP_PROJECT_ID,
+  storageBucket: process.env.REACT_APP_STORAGE_BUCKET,
+  messagingSenderId: process.env.REACT_APP_MESSAGING_SENDER_ID,
+  appId: process.env.REACT_APP_APP_ID
 };
 
 // Initialize Firebase
