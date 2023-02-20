@@ -1,0 +1,56 @@
+@use '/src/MyShit.scss';
+
+.Illustration-Page{
+    position: relative;
+    padding-top: 5em;
+
+    .Illustration-Back{
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        background-color: rgba(#000, .0);
+        border: 0px;
+        font-size: 2em;
+        cursor: pointer;
+        
+        &::before{
+            content: '\25c4';
+
+        }
+    }
+
+    .Illustration-Content{
+        position: relative;
+        padding-top: 5em;
+
+        height: auto !important;
+
+        max-width: 1600px;
+        margin: 0 auto;
+        column-gap: 10px;
+        
+        @include MyShit.s{
+        -webkit-column-count: 2;
+        -moz-column-count: 2;
+        column-count: 2;
+        }
+        @include MyShit.m{
+        -webkit-column-count: 3;
+        -moz-column-count: 3;
+        column-count: 3;
+        }
+        @include MyShit.l{
+        -webkit-column-count: 4;
+        -moz-column-count: 4;
+        column-count: 4;
+        }
+
+        .Illustration-Title{
+            position: absolute;
+            top: 0;left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2em;
+            font-family: 'Lora', serif;
+        }
+    }
+}

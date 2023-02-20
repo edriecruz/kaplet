@@ -1,0 +1,23 @@
+@use '/src/MyShit.scss';
+
+.Free-Img-Link{
+    transition: all 1s;
+    @include MyShit.s{
+        margin: 0 .5em;}
+    @include MyShit.m{
+        margin: 0 1.5em;}
+    @include MyShit.l{
+        margin: 0 2em;}
+
+    .Free-Img{
+        transition: all 1s;
+    object-fit: contain;
+
+    @include MyShit.s{
+        width: 10em;}
+    @include MyShit.m{
+        width: 15em;}
+    @include MyShit.l{
+        width: 20em;}
+    }
+}

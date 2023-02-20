@@ -1,0 +1,30 @@
+@use '/src/MyShit.scss';
+
+.Architecture-Image{
+    margin-bottom: 10px;
+    width: 100%;
+}
+
+.Architecture-Modal{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(#000, .7);
+    z-index: 1;
+    @include MyShit.flex-centered;
+    
+    .Architecture-Modal-Image{
+        transition: all 2s;
+        @include MyShit.s{
+            width: 20em;
+        }
+        @include MyShit.m{
+            width: 30em;
+        }
+        @include MyShit.l{
+            width: 35em;
+        }
+    }
+}

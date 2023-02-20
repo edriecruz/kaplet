@@ -1,0 +1,155 @@
+@use '/src/MyShit.scss';
+
+.About{
+    padding-top: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 5em;
+
+    .About-Top-Content{
+        display: flex;
+        
+        @include MyShit.s{
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+        @include MyShit.m{
+            flex-direction: column;
+        }
+        @include MyShit.l{
+            flex-direction: row;
+            gap: 5em;
+            margin-left: 3em;
+
+        }
+
+        .About-Img{
+            transition: all .3s;
+    
+            padding-top: 4em;
+            object-fit: contain;
+            border-radius: 20px;
+            transform: rotate(-5deg);
+
+            &:hover{
+                transform: scale(1.2);
+            }
+
+            @include MyShit.s{
+                width: 20em;}
+            @include MyShit.m{
+                width: 35em;}
+            @include MyShit.l{
+                width: 40em;}
+        }
+        .About-Text{
+            padding-top: 1em;
+            font-family: Arial, Helvetica, sans-serif;
+            text-align: baseline;
+            align-self: center;
+            @include MyShit.s{
+                font-size: 1.5em;}
+            @include MyShit.m{
+                font-size: 1.7em;}
+            @include MyShit.l{
+                font-size: 2em;}
+        }
+
+    }
+    
+    .About-Middle-Content{
+        display: flex;
+        flex-direction: column;
+        gap: 5em;
+
+        .About-Socials{
+            display: flex;
+            justify-content: center;
+            @include MyShit.s{
+                gap: 5em;}
+            @include MyShit.m{
+                gap: 7em;}
+            @include MyShit.l{
+                gap: 10em;}
+
+            .Behance{
+                @include MyShit.hover-scale2;
+                margin: 10px 0;
+                a{
+                    color: #000;
+                }
+            }
+
+            .Facebook{
+                @include MyShit.hover-scale2;
+                margin: 10px 0;
+                a{
+                    color: #000;
+                }
+            }
+            
+            .Instagram{
+                @include MyShit.hover-scale2;
+                margin: 10px 0;
+                a{
+                    color: #000;
+                }
+            }
+        }
+        .About-QR{
+            max-width: 350px;
+            margin-inline: auto;
+            .QR-Kaplet{
+                @include MyShit.hover-scale1;
+                @include MyShit.s{width: 15em;}
+                @include MyShit.m{width: 17em;}
+                @include MyShit.l{width: 20em;}
+            }
+        }
+    }
+
+    .About-Footer-Content{
+        background-color: #000;
+        width: 100%;
+        height: 10em;
+
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+
+        .Edrie-Logo{
+            .Edrie-Logo-Img{
+                @include MyShit.s{
+                    width: 4em;}
+                @include MyShit.m{
+                    width: 6em;}
+                @include MyShit.l{
+                    width: 8em;}
+            }
+        }
+        .Collab-Logo{
+            .Collab-Logo-Img{
+                @include MyShit.s{
+                    width: 4em;}
+                @include MyShit.m{
+                    width: 6em;}
+                @include MyShit.l{
+                    width: 8em;}
+            }
+        }
+        .Kaplet-Logo{
+            .Kaplet-Logo-Img{
+                @include MyShit.s{
+                    width: 4em;}
+                @include MyShit.m{
+                    width: 6em;}
+                @include MyShit.l{
+                    width: 8em;}
+            }
+        }
+    }
+    
+}

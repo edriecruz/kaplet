@@ -1,0 +1,60 @@
+@use '/src/MyShit.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Permanent+Marker&family=Russo+One&display=swap');
+
+.Freebies-Page{
+    position: relative;
+    
+    .Freebies-Page-Back{
+        transition: all 1s;
+        position: absolute;
+        top: 20px;
+        background-color: rgba(#000, .0);
+        border: 0px;
+        cursor: pointer;
+        
+        &::before{
+            content: '\25c4';
+
+        }
+
+        @include MyShit.s{
+            font-size: 1em;
+            left: 30px;}
+        @include MyShit.m{
+            font-size: 1.5em;
+            left: 40px;}
+        @include MyShit.l{
+            font-size: 2em;
+            left: 50px;}
+    }
+    .Freebies-Page-Title{
+
+        .Freebies-Page-Title-Text{
+            transition: all 1s;
+            font-family: 'Lora', serif;
+            @include MyShit.s{
+                font-size: 2.5em;}
+            @include MyShit.m{
+                font-size: 2.75em;}
+            @include MyShit.l{
+                font-size: 3em;}
+        }
+        .Freebies-Page-Title-Description{
+            transition: all 1s;
+            font-family: 'Lora', serif;
+            font-weight: 900;
+            
+            @include MyShit.s{
+                font-size: 1.1em;}
+            @include MyShit.m{
+                font-size: 1.15em;}
+            @include MyShit.l{
+                font-size: 1.2em;}
+        }
+    }
+    .Freebies-Page-Items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    }
+}

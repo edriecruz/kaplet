@@ -1,0 +1,45 @@
+@use '/src/MyShit.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Permanent+Marker&family=Russo+One&display=swap');
+
+.Freebies{
+    margin-top: 5em;
+    width: 100%;
+    height: 50vh;
+    display: flex;
+    flex-direction: column;
+
+    .Freebies-Items{
+        display: flex;
+        max-width: 800px;
+        margin-inline: auto;
+        align-items: center;
+    }
+
+    .Freebies-Page-Link{
+        position: relative;
+        .Freebies-Page-Link-p{
+            transition: all 1s;
+            color: #000;
+            text-decoration: none;
+            font-family: 'Lora', serif;
+            font-size: 2em;
+            &:hover{
+                &::after{
+                    content: '';
+                    position: absolute;
+                    left: 50%;
+                    bottom: 30px;
+                    transform: translate(-50%);
+                    color: #000;
+                    border: #000 solid 2px;
+                    animation: underline .75s forwards;
+
+                    @keyframes underline {
+                        0%{width: 0;}
+                        100%{width: 275px;} 
+                    }
+                }
+            }
+        }
+    }
+}

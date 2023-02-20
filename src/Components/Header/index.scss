@@ -1,0 +1,56 @@
+@use '/src/MyShit.scss';
+
+.Header{
+    @include MyShit.flex-centered;
+    transition: all 1s ease;
+
+    @include MyShit.s{
+        margin-top: 10px;
+    }
+    @include MyShit.m{
+        margin-top: 40px;
+    }
+    @include MyShit.l{
+        margin-top: 50px;
+}
+
+    .KapletLogo{
+        transition: all 1s;
+
+            background-repeat: no-repeat;
+            background-position: center;
+
+        @include MyShit.s{
+            background-image: url("https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Logos%2FAsset2.png?alt=media&token=f5b56cba-ac38-48db-882d-52182f74fbaf");
+            background-size: 200px 150px;
+            height: 150px;
+            width: 15em;
+        }
+        @include MyShit.m{
+            background-image: url("https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Logos%2FAsset1.png?alt=media&token=df76fb41-ab39-4eeb-811b-66a37a3d4d73");
+            background-size: 720px 200px;
+            height: 200px;
+            width: 50em;
+        }
+            // .full{
+            //     width: 50%;
+            //     @include MyShit.s{
+            //         display: none;
+            //     }
+            //     @include MyShit.m{
+            //         display: block;
+            //     }
+            // }
+            // .mobile{
+            //     width: 50%;
+            //     @include MyShit.s{
+            //         display: block;
+            //     }
+            //     @include MyShit.m{
+            //         display: none;
+            //     }
+            // }
+
+    }
+    
+}

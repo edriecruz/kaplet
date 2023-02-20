@@ -1,0 +1,515 @@
+@use '/src/MyShit.scss';
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital@1&family=Permanent+Marker&family=Russo+One&display=swap');
+
+.Works{
+    margin-top: 6em;
+    width: 100%;
+    height: 25vh;
+    position: relative;
+
+    .Works-Content-Container{
+        height: 50vh;
+        max-width: 90%;
+        position: relative;
+        margin-inline: auto;    
+        cursor: default;
+
+        @include MyShit.flex-centered;
+
+        .Works-Content-Container-Title{
+            font-family: 'Lora', serif;
+            position: absolute;
+            z-index: -1;
+            @include MyShit.s{
+                font-size: 1.5em;}
+            @include MyShit.m{
+                font-size: 1.7em;}
+            @include MyShit.l{
+                font-size: 2em;}
+
+            &::after{
+                content: '\25bc';
+                position: absolute;
+                left: 50%;
+                bottom: 20%;
+                transform: translate(-25%, 150%);
+                animation: bounce 4s infinite;
+                @keyframes bounce {
+                    0%{transform: translate(0, 110%);}
+                    10%{transform: translate(0, 140%);}
+                    20%{transform: translate(0, 110%);}
+                    30%{transform: translate(0, 140%);}
+                    40%{transform: translate(0, 110%);}
+                    50%{transform: translate(0, 140%);}
+                    60%{transform: translate(0, 110%);} 
+                    70%{transform: translate(0, 140%);}
+                    80%{transform: translate(0, 110%);}
+                    90%{transform: translate(0, 140%);}
+                    100%{transform: translate(0, 110%);}
+                }
+            }
+        }
+
+        .Photography{
+            width: 100%;
+            background-color: rgba(#c44a35, 1);
+            border-radius: 20px;
+
+            .Photography-Cover{
+                background-color: rgba(#000, .5);
+                position: relative;
+                border-radius: 20px;
+
+                .Photography-Cover-Images{
+                    display: flex;
+                    width: 100%;
+                    height: 50vh;
+                    
+                    border-radius: 20px;
+
+                    .Photography-Cover-Image-1{
+                        object-fit: cover;
+                        width: 50%;
+                        border-radius: 20px 0 0 20px;
+                    }
+                    .Photography-Cover-Image-2{
+                        object-fit: cover;
+                        width: 50%;
+                        border-radius: 0 20px 20px 0;
+                    }
+                }
+
+                .Photography-Cover-Animate{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50vh;
+                    z-index: 1;
+                    border-radius: 20px;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: .6;
+                        background: url('https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Asset%205%40300x.png?alt=media&token=c8e5491e-c39e-4c8a-a390-fd099f434c21');
+                        background-repeat: no-repeat;
+                        background-position: 50% 0;
+                        background-size: cover;
+                        border-radius: 20px;
+                    }
+
+                    animation: fadeout 2.5s forwards;
+
+                    @keyframes fadeout {
+                        0%{opacity: 1;}
+                        80%{opacity: 1;}
+                        100%{opacity: 0;}
+                    }
+                    
+                    .Photography-Cover-Title{
+                        font-family: 'Lora', serif;
+                        color: #fff;
+                        filter: brightness(100%);
+
+                        @include MyShit.s{
+                            font-size: 3em;
+                        }
+                        @include MyShit.m{
+                            font-size: 6em;
+                        }
+                        @include MyShit.l{
+                            font-size: 8em;
+                        }
+                    }
+                }
+            }
+        }
+        .Layout{
+            width: 100%;
+            background-color: rgba(#c6baac, 1);
+            border-radius: 20px;
+            cursor: pointer;
+
+            .Layout-Cover{
+                width: 100%;
+                height: 50vh;
+                border-radius: 20px;
+
+                .Layout-Cover-Images{
+                    width: 100%;
+                    height: 50vh;
+                    border-radius: 20px;
+
+                    .Layout-Cover-Image-1{
+                        object-fit: cover;
+                        object-position: top;
+                        width: 50%;
+                        height: 50vh;
+                        border-radius: 20px 0 0 20px;
+                    }
+                    .Layout-Cover-Image-2{
+                        object-fit: cover;
+                        width: 50%;
+                        height: 50vh;
+                        border-radius: 0 20px 20px 0;
+                    }
+                }
+
+                .Layout-Cover-Animate{
+                    position: absolute;
+                    border-radius: 20px;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50vh;
+                    z-index: 1;
+
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: .6;
+                        background: url('https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Asset%205%40300x.png?alt=media&token=c8e5491e-c39e-4c8a-a390-fd099f434c21');
+                        background-repeat: no-repeat;
+                        background-position: 50% 0;
+                        background-size: cover;
+                        border-radius: 20px;
+                    }
+
+                    animation: fadeout 2.5s forwards;
+
+                    @keyframes fadeout {
+                        0%{opacity: 1;}
+                        80%{opacity: 1;}
+                        100%{opacity: 0;}
+                    }
+
+                    .Layout-Cover-Title{
+                        font-family: 'Lora', serif;
+                        color: #fff;
+                        filter: brightness(100%);
+                        z-index: 1;
+
+                        @include MyShit.s{
+                            font-size: 5em;
+                        }
+                        @include MyShit.m{
+                            font-size: 6em;
+                        }
+                        @include MyShit.l{
+                            font-size: 8em;
+                        }
+                    }
+                }
+                
+            }
+        }
+        .Illustration{
+            width: 100%;
+            background-color: rgba(#7699ad, 1);
+            border-radius: 20px;
+            cursor: pointer;
+
+            .Illustration-Cover{
+                width: 100%;
+                height: 50vh;
+                border-radius: 20px;
+
+                .Illustration-Cover-Image{
+                    object-fit: cover;
+                    object-position: top;
+                    width: 100%;
+                    height: 50vh;
+                    border-radius: 20px;
+                }
+                
+                .Illustration-Cover-Animate{
+                    position: absolute;
+                    border-radius: 20px;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50vh;
+                    z-index: 1;
+                    
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: .6;
+                        background: url('https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Asset%205%40300x.png?alt=media&token=c8e5491e-c39e-4c8a-a390-fd099f434c21');
+                        background-repeat: no-repeat;
+                        background-position: 50% 0;
+                        background-size: cover;
+                        border-radius: 20px;
+                    }
+
+                    animation: fadeout 2.5s forwards;
+
+                    @keyframes fadeout {
+                        0%{opacity: 1;}
+                        80%{opacity: 1;}
+                        100%{opacity: 0;}
+                    }
+
+                    .Illustration-Cover-Title{
+                        font-family: 'Lora', serif;
+                        color: #fff;
+                        filter: brightness(100%);
+                        z-index: 1;
+
+                        @include MyShit.s{
+                            font-size: 3.8em;
+                        }
+                        @include MyShit.m{
+                            font-size: 6em;
+                        }
+                        @include MyShit.l{
+                            font-size: 8em;
+                        }
+                    }
+                }
+            }
+        }
+        .Logo{
+            width: 100%;
+            background-color: rgba(#fff, 1);
+            border-radius: 20px;
+            cursor: pointer;
+            
+            .Logo-Cover{
+                width: 100%;
+                height: 50vh;
+                border-radius: 20px;
+                overflow: hidden;
+
+                .Logo-Cover-Images{
+                    display: flex;
+                    width: 100%;
+                    border-radius: 20px;
+
+                    .Logo-Cover-Image-1{
+                        flex: 1;
+                        object-fit: cover;
+                        height: 50vh;
+                        width: 50%;
+                        border-radius: 20px 0 0 20px;
+                    }
+
+                    .Logo-Cover-Images-Column{
+                        flex: 1;
+                        height: 50vh;
+                        width: 100%;
+                        @include MyShit.flex-centered;
+                        flex-direction: column;
+
+                        .Logo-Cover-Image-2{
+                            object-fit: cover;
+                            width: 300px;
+                        }
+                        .Logo-Cover-Image-3{
+                            object-fit: cover;
+                            width: 100%;
+                            height: 25vh;
+                        }
+                    }
+                }
+
+                .Logo-Cover-Animate{                    
+                    position: absolute;
+                    border-radius: 20px;
+                    top: 0;
+                    left: 0;
+                    width: 100%;
+                    height: 50vh;
+                    z-index: 1;
+                    
+                    &::before{
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        top: 0;
+                        width: 100%;
+                        height: 100%;
+                        opacity: .6;
+                        background: url('https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Asset%205%40300x.png?alt=media&token=c8e5491e-c39e-4c8a-a390-fd099f434c21');
+                        background-repeat: no-repeat;
+                        background-position: 50% 0;
+                        background-size: cover;
+                        border-radius: 20px;
+                    }
+
+                    animation: fadeout 2.5s forwards;
+
+                    @keyframes fadeout {
+                        0%{opacity: 1;}
+                        80%{opacity: 1;}
+                        100%{opacity: 0;}
+                    }
+
+                    .Logo-Cover-Title{
+                        font-family: 'Lora', serif;
+                        color: #fff;
+                        filter: brightness(100%);
+                        z-index: 1;
+
+                        @include MyShit.s{
+                            font-size: 5em;
+                        }
+                        @include MyShit.m{
+                            font-size: 6em;
+                        }
+                        @include MyShit.l{
+                            font-size: 8em;
+                        }
+                    }
+                }
+            }
+
+        }
+    }
+
+    .radio-flex{
+        @include MyShit.flex-centered;
+        margin-top: 2em;
+        transition: all .5s;
+
+        @include MyShit.s{
+            gap: 80px;
+        }
+        @include MyShit.m{
+            gap: 120px;
+        }
+        @include MyShit.l{
+            gap: 150px;
+        }
+
+        input{
+            position: absolute;
+            opacity: 0;
+            cursor: pointer;
+        }
+
+        .radio:nth-child(1){
+            @include MyShit.radio-button;
+
+            input:checked ~ .checkmark-1 {
+                border: 0px;
+                }
+            input:checked ~ .checkmark-1:after {
+                display: block;
+                }
+            
+            .checkmark-1{
+                @include MyShit.checkmark-design;
+    
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    @include MyShit.opacity-animation;
+                }
+            }
+        }
+        .radio:nth-child(2){
+            @include MyShit.radio-button;
+
+            input:checked ~ .checkmark-2 {
+                border: 0px;
+
+                }
+            input:checked ~ .checkmark-2:after {
+                display: block;
+                }
+
+            .checkmark-2{
+                @include MyShit.checkmark-design;
+    
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    
+                    @include MyShit.opacity-animation;
+                }
+            }
+        }
+        .radio:nth-child(3){
+            @include MyShit.radio-button;
+
+            input:checked ~ .checkmark-3 {
+                border: 0px;
+                }
+            input:checked ~ .checkmark-3:after {
+                display: block;
+                }
+        
+            .checkmark-3{
+                @include MyShit.checkmark-design;
+    
+                &:after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    @include MyShit.opacity-animation;
+                }
+            }
+        }
+        .radio:nth-child(4){
+            @include MyShit.radio-button;
+
+            input:checked ~ .checkmark-4 {
+                border: 0px;
+                }
+            input:checked ~ .checkmark-4:after {
+                display: block;
+                }
+
+            .checkmark-4{
+                @include MyShit.checkmark-design;
+    
+                &::after {
+                    content: "";
+                    position: absolute;
+                    display: none;
+                    @include MyShit.opacity-animation;
+                }
+            }
+        }
+    }
+    
+
+    .Works-Items{
+        transition: all 1s;
+        display: flex;
+        z-index: 1;
+        position: relative;
+
+        @include MyShit.s{
+            padding-top: 80px;
+            justify-content: baseline;
+            gap: 20px;
+            overflow-x: auto;
+            &::-webkit-scrollbar{
+                width: 0;
+            }
+        }
+        @include MyShit.m{
+        padding-top: 40px;
+            justify-content: space-around;
+            gap: 10px;
+            overflow-x: hidden;
+        }
+        }
+}
