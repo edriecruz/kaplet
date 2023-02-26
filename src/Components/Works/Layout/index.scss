@@ -7,11 +7,19 @@
     .Layout-Back{
         position: absolute;
         top: 20px;
-        left: 50px;
         background-color: rgba(#000, .0);
         border: 0px;
         font-size: 2em;
         cursor: pointer;
+        @include MyShit.s{
+            left: 10px;
+        }
+        @include MyShit.m{
+            left: 30px;
+        }
+        @include MyShit.l{
+            left: 50px;
+        }
         
         &::before{
             content: '\25c4';

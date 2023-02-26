@@ -106,17 +106,17 @@ const Works = () => {
         <div className="Logo-Cover">
           <div className="Logo-Cover-Images">
           <img 
-            src="https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Logo%2FAsset%201.png?alt=media&token=b4e282b5-a2c4-4381-9bdc-4ff6f7bd36fa" 
+            src="https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Logo%2FAsset%2011.svg?alt=media&token=1719f593-f078-4f11-a14b-ebf5f8a65595" 
             alt=""
             className='Logo-Cover-Image-1' />
           
           <div className="Logo-Cover-Images-Column">
             <img 
-              src="https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Logo%2FAsset%2038.png?alt=media&token=611664d0-138c-4cc3-b7c2-d3fed8f91a6b" 
+              src="https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Logo%2FAsset%2038.svg?alt=media&token=4a2620dd-6491-4046-a005-a9d580254f73" 
               alt=""
               className='Logo-Cover-Image-2' />
             <img 
-              src="https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Logo%2F3D_Normal.svg?alt=media&token=588895e1-176d-4b72-800a-8e1b0f3dc2df" 
+              src="https://firebasestorage.googleapis.com/v0/b/kaplet-f82b1.appspot.com/o/Logo%2F3D_Normal.svg?alt=media&token=cd4317ad-5046-42b0-9da2-d0b2b042f418" 
               alt=""
               className='Logo-Cover-Image-3' />
           </div>
@@ -142,7 +142,8 @@ const Works = () => {
       checked={isChecked("Photography")}
       onChange={onSelect}
       id="Photography" 
-      className='Works-Photography-Button'/>
+      className='Works-Photography-Button'
+      />
       <span className='checkmark-1'></span>
 
       </label>

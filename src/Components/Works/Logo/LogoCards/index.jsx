@@ -20,9 +20,8 @@ const LogoCards = ({logo}) => {
 
         <img 
           key={logo.logoId}
-          src={logo.logoImg} 
+          src={logo.logoModal}
           alt="IMG"
-          title={logo.logoTitle}
           className="Logo-Modal-Image"
           />
 
