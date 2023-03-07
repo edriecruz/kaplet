@@ -22,11 +22,9 @@ const Works = () => {
 
       <div className="Works-Content-Container">
 
-        <p className="Works-Content-Container-Title">
+        {/* <p className="Works-Content-Container-Title">
           Click circles to see through my works.
-        </p>
-
-      {checked===("Photography") && 
+        </p> */}
       
         <div className="Photography Works-Content">
 
@@ -55,9 +53,7 @@ const Works = () => {
 
         </Link>
         </div>
-}
 
-      {checked===("Layout") && 
       <div className="Layout Works-Content">
 
         <Link 
@@ -80,9 +76,8 @@ const Works = () => {
           </div>
         </div>
         </Link>
-      </div>}
+      </div>
 
-      {checked===("Illustration") && 
       <div className="Illustration Works-Content">
         <Link 
           to='/Illustration'>
@@ -96,9 +91,8 @@ const Works = () => {
           </div>
         </div>
         </Link>
-      </div>}
+      </div>
 
-      {checked===("Logo") && 
       <div className="Logo Works-Content">
 
         <Link 
@@ -127,13 +121,14 @@ const Works = () => {
           </div>
         </div>
         </Link>
-      </div>}
+      </div>
+      
 
       </div>
 
       
 
-      <div className="radio-flex">
+      {/* <div className="radio-flex">
 
       <label className='radio'>
 
@@ -184,7 +179,7 @@ const Works = () => {
 
       </label>
 
-      </div>
+      </div> */}
       
     </div>
         

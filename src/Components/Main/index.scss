@@ -1,6 +1,10 @@
 @use '/src/MyShit.scss';
 
 .Main{
+    display: flex;
+    justify-content: center;
+    align-self: center;
+    
     .Main-Content{
         transition: all 1s;
         aspect-ratio: 3 / 2;
@@ -11,7 +15,7 @@
 
         @include MyShit.s{
             height: 15em;
-            margin: 0;
+            margin: 4em 0;
         }
         @include MyShit.m{
             height: 25em;
