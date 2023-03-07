@@ -85,7 +85,6 @@
                     left: 0;
                     width: 100%;
                     height: 50vh;
-                    z-index: 1;
                     border-radius: 20px;
 
                     &::before{
@@ -168,7 +167,6 @@
                     left: 0;
                     width: 100%;
                     height: 50vh;
-                    z-index: 1;
 
                     &::before{
                         content: '';
@@ -197,7 +195,6 @@
                         font-family: 'Lora', serif;
                         color: #fff;
                         filter: brightness(100%);
-                        z-index: 1;
 
                         @include MyShit.s{
                             font-size: 5em;
@@ -240,7 +237,6 @@
                     left: 0;
                     width: 100%;
                     height: 50vh;
-                    z-index: 1;
                     
                     &::before{
                         content: '';
@@ -269,7 +265,6 @@
                         font-family: 'Lora', serif;
                         color: #fff;
                         filter: brightness(100%);
-                        z-index: 1;
 
                         @include MyShit.s{
                             font-size: 3.8em;
@@ -336,7 +331,6 @@
                     left: 0;
                     width: 100%;
                     height: 50vh;
-                    z-index: 1;
                     
                     &::before{
                         content: '';
@@ -365,7 +359,6 @@
                         font-family: 'Lora', serif;
                         color: #fff;
                         filter: brightness(100%);
-                        z-index: 1;
 
                         @include MyShit.s{
                             font-size: 5em;
@@ -496,7 +489,6 @@
     .Works-Items{
         transition: all 1s;
         display: flex;
-        z-index: 1;
         position: relative;
 
         @include MyShit.s{
